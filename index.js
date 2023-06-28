@@ -13,9 +13,7 @@ export const inline2Class = (html) => {
       if (existingClassName) {
         $(val).addClass(existingClassName);
       } else {
-        const className = `class-${Date.now()}-${Math.floor(
-          Math.random() * 10000
-        )}`;
+        const className = `class-${i}`;
         styleMap.set(inlineStyle, className);
         $(val).addClass(className);
       }
