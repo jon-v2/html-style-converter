@@ -1,0 +1,24 @@
+{
+  "name": "html-style-converter",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "turn inline style in html elements to css classes without duplicates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jon-v2/html-style-converter.git"
+  },
+  "author": "jonv2.0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jon-v2/html-style-converter/issues"
+  },
+  "homepage": "https://github.com/jon-v2/html-style-converter#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "lodash": "^4.17.21"
+  }
+}
