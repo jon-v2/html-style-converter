@@ -1,7 +1,7 @@
 {
   "name": "html-style-converter",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "turn inline style in html elements to css classes without duplicates",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,22 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "lodash": "^4.17.21"
-  }
+  },
+  "keywords": [
+    "HTML styling",
+    "CSS conversion",
+    "Inline styles",
+    "CSS classes",
+    "HTML manipulation",
+    "Styling utility",
+    "HTML to CSS",
+    "CSS to inline styles",
+    "Style transformation",
+    "HTML parsing",
+    "CSS integration",
+    "Web development",
+    "Front-end tool",
+    "Style extraction",
+    "Styling optimization"
+  ]
 }
