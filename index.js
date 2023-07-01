@@ -1,7 +1,7 @@
 import { load } from "cheerio";
 import _ from "lodash";
 
-export const inline2Class = (html) => {
+export const inlineToClass = (html) => {
   const $ = load(html);
 
   const styleMap = new Map();
@@ -32,7 +32,7 @@ export const inline2Class = (html) => {
   return $.html();
 };
 
-export const class2Inline = (html) => {
+export const classToInline = (html) => {
   const $ = load(html);
 
   const styleMap = new Map();
