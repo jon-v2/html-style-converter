@@ -1,6 +1,6 @@
 # HTML Style Converter
 
-The HTML Style Converter is a utility that provides functions to convert inline styles to CSS classes and vice versa in HTML documents. It offers two main functions: `inline2Class(html)` and `class2Inline(html)`.
+The HTML Style Converter is a utility that provides functions to convert inline styles to CSS classes and vice versa in HTML documents. It offers two main functions: `inlineToClass(html)` and `classToInline(html)`.
 
 ## Installation
 
@@ -12,12 +12,12 @@ npm install html-style-converter
 
 ## Usage
 
-### `inline2Class(html)`
+### `inlineToClass(html)`
 
-The `inline2Class` function takes an HTML string as input and modifies it to remove all inline styles. The inline styles are extracted and placed in a `<style>` tag at the bottom of the page. The corresponding classes are added to the affected elements.
+The `inlineToClass` function takes an HTML string as input and modifies it to remove all inline styles. The inline styles are extracted and placed in a `<style>` tag at the bottom of the page. The corresponding classes are added to the affected elements.
 
 ```javascript
-const { inline2Class } = require("html-style-converter");
+const { inlineToClass } = require("html-style-converter");
 
 const htmlString = `
   <html>
@@ -30,16 +30,16 @@ const htmlString = `
   </html>
 `;
 
-const convertedHTML = inline2Class(htmlString);
+const convertedHTML = inlineToClass(htmlString);
 console.log(convertedHTML);
 ```
 
-### `class2Inline(html)`
+### `classToInline(html)`
 
-The `class2Inline` function takes an HTML string as input and modifies it to remove all CSS classes. The classes are converted back to inline styles, applying the original styling to the respective elements.
+The `classToInline` function takes an HTML string as input and modifies it to remove all CSS classes. The classes are converted back to inline styles, applying the original styling to the respective elements.
 
 ```javascript
-const { class2Inline } = require("html-style-converter");
+const { classToInline } = require("html-style-converter");
 
 const htmlString = `
   <html>
@@ -52,7 +52,7 @@ const htmlString = `
   </html>
 `;
 
-const convertedHTML = class2Inline(htmlString);
+const convertedHTML = classToInline(htmlString);
 console.log(convertedHTML);
 ```
 
